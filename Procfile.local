@@ -1,0 +1,1 @@
+web: nodemon -x node -r ./lib/register.js lib/server

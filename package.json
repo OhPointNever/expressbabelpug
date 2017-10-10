@@ -1,0 +1,51 @@
+{
+    "name": "expressbabelpug",
+    "version": "0.1.0",
+    "description": "express babel pug starter",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha",
+        "start": "heroku local -f Procfile.local",
+        "start:prod": "node dist/server",
+        "build": "npm run build-dist",
+        "build-dist": "rimraf dist && babel ./lib -d dist --copy-files",
+        "heroku-postbuild": "npm run build"
+    },
+    "dependencies": {
+        "babel-cli": "*",
+        "babel-core": "*",
+        "babel-plugin-transform-export-extensions": "*",
+        "babel-plugin-transform-object-rest-spread": "*",
+        "babel-preset-env": "*",
+        "express": "*",
+        "moment": "*",
+        "lodash": "*",
+        "pug": "^2.0.0-rc.4",
+        "request": "*",
+        "request-promise": "*",
+        "rimraf": "*",
+        "winston": "*"
+    },
+    "devDependencies": {
+        "babel-polyfill": "*",
+        "babel-register": "*",
+        "chai": "*",
+        "dotenv": "*",
+        "mocha": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/OhPointNever/expressbabelpug.git"
+    },
+    "keywords": [
+        "express",
+        "babel",
+        "pug"
+    ],
+    "author": "onepointnenver",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/OhPointNever/expressbabelpug/issues"
+    },
+    "homepage": "https://github.com/OhPointNever/expressbabelpug#readme"
+}
