@@ -31,7 +31,8 @@
         "babel-register": "*",
         "chai": "*",
         "dotenv": "*",
-        "mocha": "*"
+        "mocha": "*",
+        "nodemon": "*"
     },
     "repository": {
         "type": "git",
